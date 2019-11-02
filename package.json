@@ -1,0 +1,35 @@
+{
+  "name": "vscode-jael",
+  "displayName": "Jael Language Support",
+  "description": "Basic vscode support for the Jael programming language.",
+  "version": "0.0.1",
+  "publisher": "woehr",
+  "engines": { "vscode": "^0.10.0" },
+  "galleryBanner": {
+    "color": "#111111",
+    "theme": "dark"
+  },
+  "keywords": [ "language", "jael", "highlight", "syntax" ],
+  "license": "SEE LICENSE",
+  "homepage": "https://github.com/woehr/vscode-jael",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/woehr/vscode-jael.git"
+  },
+  "bugs": { "url": "https://github.com/woehr/vscode-jael/issues" },
+  "categories": [ "Programming Languages" ],
+  "activationEvents": [ "onLanguage:jael" ],
+  "contributes": {
+    "languages": [{
+      "id": "jael",
+      "aliases": [ "Jael", "jael" ],
+      "extensions": [ ".jael" ],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "jael",
+      "scopeName": "source.jael",
+      "path": "./syntaxes/jael.tmLanguage"
+    }]
+  }
+}
